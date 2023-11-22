@@ -1,0 +1,393 @@
+#homePage {
+    display: none;
+    position: relative;
+}
+
+.background{
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+
+
+/* Style for the page container with ID "loginPage" */
+#loginPage {
+    background-color:#E1E8EE;/* Set the background color */
+    padding: 20px; /* Add padding to the content within the container */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  /* Style for the content within the page container */
+  #loginPage .content {
+    text-align: top-right; /* Center-align the content */
+    padding: 20px; /* Add spacing within the content */
+  }
+
+  #registarationPage {
+    background-color: #E1E8EE; /* Set the background color */
+    padding: 20px; /* Add padding to the content within the container */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  /* Style for the content within the page container */
+  #registrationPage.content {
+    text-align: top-right; /* Center-align the content */
+    padding: 20px; /* Add spacing within the content */
+  }
+  
+  /* Add custom styles for headings, buttons, and other elements within the content as needed */
+  
+body.logged #loginPage {
+    display: none;
+}
+body.logged #registrationPage {
+  display: none;
+}
+
+body.logged #homePage {
+    display: flex;
+}
+.page {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrationLink {
+  text-align: center; /* Center the text horizontally */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+
+/* Style for the h1 element */
+h1 {
+    font-size: 32px; /* Increase the font size for a larger, more prominent heading */
+    font-weight: 180; /* Use a slightly thicker font-weight for emphasis */
+    text-align: center;
+    color: #333; /* Set the text color (you can use any color code) */
+    letter-spacing: 2px; /* Add letter-spacing for extra elegance */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    line-height: 1.2; /* Adjust the line height for better readability */
+    /* You can add more CSS properties or effects to further enhance aesthetics */
+  }
+
+.headerLogo {
+    text-align: center; /* Center-align the content */ 
+}
+  
+img{
+    width:160px
+}
+
+  .btn-primary {
+    background-color: #175d68; /* Set the background color */
+    color: #fff; /* Set the text color */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add a smooth color transition on hover */
+    margin-top: 16px;
+    /* Add a hover effect */
+    &:hover {
+      background-color: #083a46; /* Change the background color on hover */
+    }
+}
+  
+.page > * {
+    width: 300px;
+}
+
+#twoFAFormHolder {
+    display: none !important;
+}
+
+.ready #twoFAFormHolder {
+    display: flex !important;
+}
+
+#loginForm .code{
+    display: none;
+}
+
+#loginForm.codeRequested .code{
+    display: block;
+}
+
+ #loginForm {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+ }
+
+ #registrationForm {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+ }
+
+ .homePage {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+ }
+
+ .registrationLink {
+  margin-top: 60px; /* Adjust the top margin to control the spacing between the elements */
+}
+
+.text-center {
+  text-align: center;
+  -webkit-font-smoothing: antialiased; /* For Webkit browsers (e.g., Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+  font-smooth: always; /* For other browsers that support the standard property */
+}
+
+form h1{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+/* Style for the LOGOUT button */
+/* Style the header */
+.page {
+  background-color: #f4f4f4; /* Set the background color of the header */
+  padding: 20px; /* Add padding for spacing */
+  display: flex; /* Make the header a flex container */
+  justify-content: space-between; /* Move the elements to the sides */
+  align-items: center; /* Vertically center the elements */
+}
+
+#homePage h4 {
+  font-size: 24px; /* Adjust the font size */
+  margin: 0; 
+}
+
+  #twoFABox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+#enable2FAButton {
+  background: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+} 
+
+ #enable2FAButton:hover {
+  background: #45a049;
+} 
+
+/* Style the logout button */
+#logoutButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-icon {
+  width: 24px; /* Adjust the icon size */
+  height: 24px;
+}
+
+  
+  .circle-button {
+
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.1s;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .button-icon {
+    width: 100%; /* Set the width to 100% of the parent button */
+    height: 100%; /* Set the height to 100% of the parent button */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire button */
+    border-radius: 50%; /* Ensure the image is also circular */
+  }
+
+ 
+  .popup-container-1 {
+    width:400px;
+  padding:70px;
+  transform:translate(-50%, -50%) scale(0.5);
+  position:absolute;
+  top:50%;
+  left:50%;
+  box-shadow:0px 2px 16px rgba(0,0,0,0.5);
+  border-radius:3px;
+  background:#fff;
+  text-align:center;
+  }
+
+  #popupContainer-1 {
+    display: none;
+  }
+  
+  .popup-content-1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .social{
+    margin-top: 21px;
+    text-align: center; /* Center-align the text within the div */
+    display: flex;
+    justify-content: center; /* Center-align the button horizontally */
+    align-items: center; 
+  }
+  .social div{
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255,255,255,0.27);
+    color: #eaf0fb;
+    text-align: center;
+  }
+  .social div:hover{
+    background-color: rgba(255,255,255,0.47);
+  }
+  .social .linkBtn{
+    margin-left: 25px;
+  }
+  
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 300px;
+}
+
+/* New CSS for the overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the blur */
+  display: none;
+  z-index: 1; /* Ensure the overlay is on top of other content */
+}
+
+/* Additional styles for when the popup is visible */
+.popup-container.active {
+  display: block;
+  z-index: 2; /* Ensure the popup is on top of the overlay */
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-body {
+    padding: 20px 0;
+}
+
+.popup-link {
+    display: inline-block;
+    background: #1877F2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.popup-link:hover {
+    background: #232d3d;
+}
+
+
+
